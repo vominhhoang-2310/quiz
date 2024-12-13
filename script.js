@@ -78,7 +78,7 @@ function sendEmail() {
         mode: "no-cors", // Add this line to bypass CORS
     })
         .then(() => {
-            alert("Email sent successfully!");
+            alert("Cám ơn bé đã dành thời gian trả lời nhen! ^^");
         })
         .catch((error) => {
             console.error("Error:", error);
