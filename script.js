@@ -45,6 +45,7 @@ function nextQuestion() {
 		showQuestion();
 	} else {
 		displayAnswers();
+		sendEmail();
 	}
 }
 
@@ -63,6 +64,26 @@ function displayAnswers() {
                 -->
             `;
 	document.getElementById('question-container').style.display = 'none';
+}
+
+function sendEmail() {
+    const data = { answers: answers };
+
+    fetch("https://script.google.com/macros/s/AKfycbxaMe2JuZi_B6jGHsJNV_Mkq-fTTpcdTDxvu_ydyc6J68XPLzdzqBXFKVey1l5WG7I_/exec", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+        mode: "no-cors", // Add this line to bypass CORS
+    })
+        .then(() => {
+            alert("Email sent successfully!");
+        })
+        .catch((error) => {
+            console.error("Error:", error);
+            alert("There was an error sending your answers.");
+        });
 }
 
 // Initialize the quiz when the page is fully loaded
