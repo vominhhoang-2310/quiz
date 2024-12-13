@@ -69,7 +69,7 @@ function displayAnswers() {
 function sendEmail() {
     const data = { answers: answers };
 
-    fetch("https://script.google.com/macros/s/AKfycbxaMe2JuZi_B6jGHsJNV_Mkq-fTTpcdTDxvu_ydyc6J68XPLzdzqBXFKVey1l5WG7I_/exec", {
+    fetch("https://script.google.com/macros/s/AKfycbx0xBBWTa7sJiIna6qolBTLHp2PngMSW3MdWDyBUIY8Ua8a8vDPoEEQTO2KxthPNj1pmA/exec", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
