@@ -27,7 +27,7 @@ function showQuestion() {
 function nextQuestion() {
 	const answer = document.getElementById('answer').value.trim();
 	if (answer === "") {
-		alert("Please provide an answer.");
+		alert("Năn nỉ trả lời màaaaa 🥺");
 		return;
 	}
 
@@ -78,13 +78,21 @@ function sendEmail() {
         mode: "no-cors", // Add this line to bypass CORS
     })
         .then(() => {
-            alert("Cám ơn bé đã dành thời gian trả lời nhen! ^^");
+            alert("Cám ơn bé đã dành thời gian trả lời nhen! 🥰");
         })
         .catch((error) => {
             console.error("Error:", error);
             alert("There was an error sending your answers.");
         });
 }
+
+// Detect Enter key press
+document.getElementById('answer').addEventListener('keypress', function (event) {
+	if (event.key === 'Enter') {
+		event.preventDefault(); // Prevent unwanted form submission
+		nextQuestion(); // Trigger the next question on Enter key press
+	}
+});
 
 // Initialize the quiz when the page is fully loaded
 window.onload = function() {
