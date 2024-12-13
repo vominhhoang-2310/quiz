@@ -52,7 +52,7 @@ function nextQuestion() {
 function displayAnswers() {
 	const answerContainer = document.getElementById('answer-container');
 	answerContainer.innerHTML = `
-            	<p>Okie! Hẹn gặp bé sau nhen ^^</p>
+            	<p>Okie! Hẹn gặp bé iu lúc <strong>${answers[1]}</strong> nhen ^^</p>
                 <!-- 
 	                <h3>Your Answers:</h3>
 	                <ul>
