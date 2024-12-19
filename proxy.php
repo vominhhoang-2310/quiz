@@ -1,6 +1,6 @@
 <?php
 // Replace with your actual Google Apps Script URL
-$googleScriptUrl = "https://script.google.com/macros/s/AKfycbx0xBBWTa7sJiIna6qolBTLHp2PngMSW3MdWDyBUIY8Ua8a8vDPoEEQTO2KxthPNj1pmA/exec";
+$googleScriptUrl = "https://script.google.com/macros/s/AKfycbwAIzAmYpOPWlqLe0qLVbNlUtIxKdcimHZwy1IHO5fN0ZzWNvs0bpy3DwqFlx1WmIDEKg/exec";
 
 // Forward the POST request to the Google Apps Script
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {

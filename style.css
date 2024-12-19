@@ -18,7 +18,7 @@ body {
     background-repeat: no-repeat;
 	border-radius: 10px;
 	padding: 30px;
-	width: 300px;
+	width: 320px;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 	text-align: center;
 	display: none; /* Hide the quiz container initially */
@@ -33,7 +33,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.3); /* Adjust opacity here */
+    background-color: rgba(0, 0, 0, 0.1); /* Adjust opacity here */
     border-radius: inherit; /* Match the border-radius of the container */
     z-index: 1; /* Place the overlay behind the text */
 }
@@ -63,7 +63,7 @@ p {
 }
 
 .question {
-	font-size: 23px;
+	font-size: 20px;
 	margin-bottom: 20px;
 	color:white;
 	text-shadow: 
@@ -76,7 +76,7 @@ p {
 input[type="text"] {
 	max-width: 100%;
 	padding: 10px;
-	border: 2px solid #007BFF;
+	border: 2px solid #4469df7d;
 	border-radius: 5px;
 	font-size: 16px;
 	margin-bottom: 20px;
@@ -84,7 +84,7 @@ input[type="text"] {
 }
 
 input[type="text"]:focus {
-	border-color: #0056b3;
+	border-color: #1f71dc;
 }
 
 button {
@@ -95,7 +95,7 @@ button {
 	border-radius: 5px;
 	font-size: 16px;
 	cursor: pointer;
-	width: 40%;
+	width: 30%;
 }
 
 button:hover {
@@ -127,7 +127,7 @@ button:hover {
 
 .progress-bar {
 	height: 100%;
-	background-color: #007BFF;
+	background-color: #4469df7d;
 	width: 33.33%;
 }
 
