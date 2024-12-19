@@ -87,7 +87,7 @@ function displayAnswers() {
 function sendEmail() {
     const data = { answers };
 
-    fetch("proxy.php", {
+    fetch("https://script.google.com/macros/s/AKfycbwAIzAmYpOPWlqLe0qLVbNlUtIxKdcimHZwy1IHO5fN0ZzWNvs0bpy3DwqFlx1WmIDEKg/exec", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
