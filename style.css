@@ -44,33 +44,23 @@ body {
 }
 
 h1 {
-	color: white;
+	color: #b05f5f;
 	text-shadow: 
-        -1px -1px 0 black,  /* Top-left */
-         1px -1px 0 black,  /* Top-right */
-        -1px  1px 0 black,  /* Bottom-left */
-         1px  1px 0 black;  /* Bottom-right */
+        -1px -1px 0 white,  /* Top-left */
+         1px -1px 0 white,  /* Top-right */
+        -1px  1px 0 white,  /* Bottom-left */
+         1px  1px 0 white;  /* Bottom-right */
 }
 
 p {
 	font-size: large;
-	color: white;
-	text-shadow: 
-        -1px -1px 0 black,  /* Top-left */
-         1px -1px 0 black,  /* Top-right */
-        -1px  1px 0 black,  /* Bottom-left */
-         1px  1px 0 black;  /* Bottom-right */
+	color: black;
 }
 
 .question {
 	font-size: 20px;
 	margin-bottom: 20px;
-	color:white;
-	text-shadow: 
-        -1px -1px 0 black,  /* Top-left */
-         1px -1px 0 black,  /* Top-right */
-        -1px  1px 0 black,  /* Bottom-left */
-         1px  1px 0 black;  /* Bottom-right */
+	color:black;
 }
 
 input[type="text"] {
