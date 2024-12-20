@@ -78,7 +78,7 @@ input[type="text"]:focus {
 }
 
 button {
-	background-color: #007BFF;
+	background-color: #e27452;
 	color: white;
 	padding: 10px 20px;
 	border: none;
@@ -89,7 +89,7 @@ button {
 }
 
 button:hover {
-	background-color: #0056b3;
+	background-color: #b74a28;
 }
 
 .answer-container {
@@ -124,7 +124,7 @@ button:hover {
 /* Loading animation styles */
 .loader {
 	border: 5px solid #f3f3f3;
-	border-top: 5px solid #007BFF;
+	border-top: 5px solid #b05f5f;
 	border-radius: 50%;
 	width: 50px;
 	height: 50px;
