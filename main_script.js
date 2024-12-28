@@ -113,7 +113,36 @@ document.getElementById('answer').addEventListener('keypress', function (event) 
 	}
 });
 
+// Pull to refresh the page
+const pullToRefresh = document.querySelector('.pull-to-refresh');
+let touchstartY = 0;
+
+document.addEventListener('touchstart', (e) => {
+    touchstartY = e.touches[0].clientY;
+});
+
+document.addEventListener(
+    'touchmove',
+    (e) => {
+        const touchY = e.touches[0].clientY;
+        const touchDiff = touchY - touchstartY;
+
+        if (touchDiff > 0 && window.scrollY === 0) {
+            pullToRefresh.classList.add('visible');
+            e.preventDefault(); // Prevent default scrolling
+        }
+    },
+    { passive: false } // Explicitly set passive to false
+);
+
+document.addEventListener('touchend', () => {
+    if (pullToRefresh.classList.contains('visible')) {
+        pullToRefresh.classList.remove('visible');
+        location.reload(); // Reload the page
+    }
+});
+
 // Initialize the quiz when the page is fully loaded
 window.onload = function() {
-	setTimeout(showQuiz, 1500); // Show the quiz after 2 seconds
+	setTimeout(showQuiz, 1500); // Show the quiz after 1.5 seconds
 };
