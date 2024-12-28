@@ -34,8 +34,9 @@ function nextQuestion() {
 	// Store the answer
 	answers.push(answer);
 
-	if ((answers[0].toLowerCase().includes("không") && (answers[0].toLowerCase().split(" ").filter(word => word === "no").length) % 2 != 0) || 
-		answers[0].toLowerCase().includes("ko") || 
+	if (answers[0].toLowerCase().includes("không") || 
+		answers[0].toLowerCase().includes("ko") ||
+		answers[0].toLowerCase().includes("chưa") || 
 		answers[0].toLowerCase().includes("0") || 
 		answers[0].toLowerCase().includes("bận")) {
 		const answerContainer = document.getElementById('answer-container');
@@ -87,7 +88,7 @@ function displayAnswers() {
 function sendEmail() {
     const data = { answers };
 
-    fetch("https://script.google.com/macros/s/AKfycbwAIzAmYpOPWlqLe0qLVbNlUtIxKdcimHZwy1IHO5fN0ZzWNvs0bpy3DwqFlx1WmIDEKg/exec", {
+    fetch("https://script.google.com/macros/s/AKfycbyppWep9Jd2XHoobfAJ2YsHvOhG-l2zXhtC09GqDS71vVp70esOjvPGQwNBGkzkZLz2eA/exec", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
